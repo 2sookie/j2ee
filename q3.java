@@ -27,6 +27,18 @@ class STUDENT1
 	}                                            
 }
 
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+
 public class GUI1 implements ActionListener{
 	static JFrame f1=new JFrame("STUDENT INFO");
 	static JLabel label1=new JLabel("ENTER NAME");
@@ -132,9 +144,9 @@ public class GUI1 implements ActionListener{
 			f2.setVisible(true);
 			JTextArea info=new JTextArea(20,20);
 			f2.add(info);
-			for(STUDENT1 ob1:AA)
+			for(STUDENT1 ob:AA)
 			{
-				info.setText(ob1.toString());
+				info.setText(ob.toString());
 			}
 			
 			//System.out.println(".............perfect............");
